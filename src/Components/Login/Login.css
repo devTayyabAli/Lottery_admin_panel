@@ -1,0 +1,60 @@
+.main_form {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.form_ittem {
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px 3px 30px 0px rgb(30 75 203 / 22%);
+    transition: all ease 0.3s !important;
+}
+
+.form_ittem h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+.inner_form_style {
+    padding: 50px 70px;
+
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-form-vertical .ant-form-item-label>label,
+:where(.css-dev-only-do-not-override-1km3mtt).ant-col-24.ant-form-item-label>label,
+:where(.css-dev-only-do-not-override-1km3mtt).ant-col-xl-24.ant-form-item-label>label {
+    font-family: "Comfortaa" !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-input {
+    font-family: "Comfortaa" !important;
+    background-color: transparent !important;
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-form-item .ant-form-item-label>label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+    display: none !important;
+}
+
+@media screen and (max-width:600px) {
+    .custom-button2 {
+        padding: 4px 15px;
+    }
+}
+
+:where(.css-dev-only-do-not-override-1km3mtt).ant-input-affix-wrapper {
+    height: 3rem !important; 
+}
+:where(.css-dev-only-do-not-override-1km3mtt).ant-input {
+    
+    height: 3rem !important;
+}

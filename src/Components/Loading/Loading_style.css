@@ -1,0 +1,89 @@
+.loading_main_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(53, 53, 53);
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+
+}
+.loader {
+    position: relative;
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px rgb(0, 0, 0);
+    background: #dc3545;
+    overflow: hidden;
+    opacity: 5 !important;
+
+}
+
+.loader::before {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    border-radius: 40%;
+    background: #111;
+    top: -150%;
+    left: -50%;
+    opacity: 0.8;
+    animation: animate 12s linear infinite;
+    opacity: 5 !important;
+
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loader::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    border-radius: 40%;
+    background: #111;
+    top: -150%;
+    left: -50%;
+    opacity: 0.9;
+    animation: animate2 5s linear infinite;
+    opacity: 5 !important;
+
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+.main_my_colution_here {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .loder_spinner {
+      animation: App-logo-spin infinite 10s linear;
+    }
+  }
